@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.order">
+
+    <application
+        android:name="com.demo.order.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CarOrder">
+        <activity
+            android:name="com.demo.order.activity.OrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.order.activity.AddOrderStep2Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.order.activity.AddOrderStep1Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.order.activity.SignActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.demo.order.activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.demo.order.activity.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
